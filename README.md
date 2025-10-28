@@ -1,23 +1,29 @@
-# CGL-GI-DID
-This repository is the official implementation of the paper "Generative Method for Solving Interactive Dynamic Influence Diagram".
+# CGL-GI-DID: Contrastive Generative Learning for Enhanced Multiagent Decision-Making under Uncertainty
 
-This repository is the official implementation of the paper **"Generative Method for Solving Interactive Dynamic Influence Diagram"**.
+This repository provides the official implementation of the paper **"Contrastive Generative Learning for Enhanced Multiagent Decision-Making under Uncertainty"**, featuring our proposed **CGL(WGAN-div)** method for multi-agent decision-making under uncertainty.
 
-We introduce the **GI-DID (Generative Interactive Dynamic Influence Diagram)** framework, an innovative extension of the [Ev-IDID](https://github.com/lamingic/Ev-IDID) toolkit. GI-DID addresses the core challenge of modeling other agents' unpredictable behaviors in multi-agent systems by integrating generative AI.
+## Overview
+
+CGL-GI-DID extends the [GI-DID framework](https://github.com/lamingic/GI-DID), which itself builds upon the [Ev-IDID toolkit](https://github.com/lamingic/Ev-IDID). Our approach addresses the critical challenge of modeling other agents' unpredictable behaviors in multi-agent systems through advanced generative AI techniques.
 
 ## Core Methodology
 
-Our main contribution is the **CGL(WGAN-div)** method, which:
-*   Leverages generative models (specifically WGAN-div) to synthesize a diverse and representative set of potential agent behaviors.
-*   Employs a constrained generative learning process to select high-quality behavioral models.
-*   Enhances the subject agent's decision-making quality in complex interactions.
+The **CGL(WGAN-div)** method introduces:
+* **Diverse Behavior Synthesis**: Leverages WGAN-div to generate comprehensive sets of potential agent behaviors
+* **Constrained Selection**: Implements a novel constrained learning process to identify high-quality behavioral models
+* **Enhanced Decision-Making**: Improves subject agent's performance in complex multi-agent interactions
 
 ## Repository Contents
 
-This repository provides:
-*   A complete implementation of the **GI-DID framework**.
-*   Source code for **CGL(WGAN-div)** and other baseline algorithms (GAN, VAE, AAE, etc.).
-*   Scripts and resources to run experiments in two classic domains: **Multiagent Tiger** and **UAV**.
-*   Guidelines for reproducing the experimental results.
+This repository includes:
+* Complete implementation of **CGL(WGAN-div)** algorithm
+* Comparative baseline implementations (GAN, VAE, AAE, WGAN-div)
+* Experimental setups for **Multiagent Tiger** and **UAV** domains
+* Reproduction guidelines and evaluation scripts
+* Pre-trained models and configuration files
 
-Empirical results demonstrate that our CGL(WGAN-div) method outperforms other baselines in generating diverse and representative behaviors, leading to a higher average reward for the subject agent.
+## Results
+
+Experimental evaluation demonstrates that CGL(WGAN-div) outperforms existing methods in generating diverse and representative behaviors, resulting in significantly higher average rewards for the subject agent across multiple domains.
+
+For the complete GI-DID framework and additional resources, visit the main [GI-DID repository](https://github.com/lamingic/GI-DID).
